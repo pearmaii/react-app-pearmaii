@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from "react"; 
 
 const todos = [
     {
@@ -106,7 +106,7 @@ export default function ToDoLists () {
     );
 
     const items = enrItems.map(item =>
-        <Item id={item.id} title={item.title} chk={item.checked} desc={item.description} cov={item.cover} ico={item.icon} enr={item.enrollment} />
+        <Item id={item.id} title={item.title} chk={item.checked} key={item.id} desc={item.description} cov={item.cover} ico={item.icon} enr={item.enrollment} />
     );
     return (
     <div className="p-5 bg-violet-300">  
